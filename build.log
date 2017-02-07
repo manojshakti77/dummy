@@ -1,0 +1,491 @@
+[INFO ]  Performing some trivial sanity checks
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  Testing '! ( -n  )'
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build' 
+[DEBUG]  ==> Executing: 'rm' '-f' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/backtrace' 
+[DEBUG]  ==> Executing: 'touch' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/foo' 
+[DEBUG]  Testing '! ( -f /home/manoj2/Desktop/crosstool-ng-1.19.0/.build/FOO )'
+[DEBUG]  ==> Executing: 'rm' '-f' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/foo' 
+[DEBUG]  Testing '-f /bin/bash -a -x /bin/bash'
+[DEBUG]  Creating bin-override for tools in '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools'
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin' 
+[DEBUG]  Creating script-override for 'install' -> '"/usr/bin/install -c"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/install' 
+[DEBUG]  Creating script-override for 'bash' -> '"/bin/bash"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/bash' 
+[DEBUG]  Creating script-override for 'awk' -> '"/usr/bin/awk"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/awk' 
+[DEBUG]  Creating script-override for 'grep' -> '"/bin/grep"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/grep' 
+[DEBUG]  Creating script-override for 'make' -> '"/usr/bin/make"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/make' 
+[DEBUG]  Creating script-override for 'sed' -> '"/bin/sed"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/sed' 
+[DEBUG]  Creating script-override for 'libtool' -> '"/usr/bin/libtool"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/libtool' 
+[DEBUG]  Creating script-override for 'libtoolize' -> '"/usr/bin/libtoolize"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/libtoolize' 
+[DEBUG]  Creating script-override for 'objcopy' -> '"/usr/bin/objcopy"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/objcopy' 
+[DEBUG]  Creating script-override for 'objdump' -> '"/usr/bin/objdump"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/objdump' 
+[DEBUG]  Creating script-override for 'readelf' -> '"/usr/bin/readelf"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/readelf' 
+[DEBUG]  Creating script-override for 'patch' -> '"/usr/bin/patch"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/patch' 
+[DEBUG]  Creating script-override for 'gperf' -> '"/usr/bin/gperf"'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tools/bin/gperf' 
+[INFO ]  Build started 20170207.063748
+[DEBUG]  =================================================================
+[DEBUG]  Dumping user-supplied crosstool-NG configuration
+[DEBUG]    ==> Executing: 'grep' '-E' '^(# |)CT_' '.config' 
+[DEBUG]    CT_CONFIGURE_has_xz=y
+[DEBUG]    CT_MODULES=y
+[DEBUG]    # CT_OBSOLETE is not set
+[DEBUG]    # CT_EXPERIMENTAL is not set
+[DEBUG]    # CT_DEBUG_CT is not set
+[DEBUG]    CT_LOCAL_TARBALLS_DIR="${HOME}/src"
+[DEBUG]    CT_SAVE_TARBALLS=y
+[DEBUG]    CT_WORK_DIR="${CT_TOP_DIR}/.build"
+[DEBUG]    CT_PREFIX_DIR="${HOME}/x-tools/${CT_TARGET}"
+[DEBUG]    CT_INSTALL_DIR="${CT_PREFIX_DIR}"
+[DEBUG]    CT_RM_RF_PREFIX_DIR=y
+[DEBUG]    # CT_REMOVE_DOCS is not set
+[DEBUG]    # CT_BUILD_MANUALS is not set
+[DEBUG]    CT_INSTALL_DIR_RO=y
+[DEBUG]    CT_STRIP_ALL_TOOLCHAIN_EXECUTABLES=y
+[DEBUG]    # CT_FORBID_DOWNLOAD is not set
+[DEBUG]    # CT_FORCE_DOWNLOAD is not set
+[DEBUG]    CT_CONNECT_TIMEOUT=10
+[DEBUG]    # CT_ONLY_DOWNLOAD is not set
+[DEBUG]    # CT_USE_MIRROR is not set
+[DEBUG]    # CT_FORCE_EXTRACT is not set
+[DEBUG]    CT_OVERIDE_CONFIG_GUESS_SUB=y
+[DEBUG]    # CT_ONLY_EXTRACT is not set
+[DEBUG]    CT_PATCH_BUNDLED=y
+[DEBUG]    # CT_PATCH_LOCAL is not set
+[DEBUG]    # CT_PATCH_BUNDLED_LOCAL is not set
+[DEBUG]    # CT_PATCH_LOCAL_BUNDLED is not set
+[DEBUG]    # CT_PATCH_BUNDLED_FALLBACK_LOCAL is not set
+[DEBUG]    # CT_PATCH_LOCAL_FALLBACK_BUNDLED is not set
+[DEBUG]    # CT_PATCH_NONE is not set
+[DEBUG]    CT_PATCH_ORDER="bundled"
+[DEBUG]    CT_PARALLEL_JOBS=2
+[DEBUG]    CT_LOAD=""
+[DEBUG]    CT_USE_PIPES=y
+[DEBUG]    CT_EXTRA_CFLAGS_FOR_BUILD=""
+[DEBUG]    CT_EXTRA_LDFLAGS_FOR_BUILD=""
+[DEBUG]    CT_EXTRA_CFLAGS_FOR_HOST=""
+[DEBUG]    CT_EXTRA_LDFLAGS_FOR_HOST=""
+[DEBUG]    # CT_CONFIG_SHELL_SH is not set
+[DEBUG]    # CT_CONFIG_SHELL_ASH is not set
+[DEBUG]    CT_CONFIG_SHELL_BASH=y
+[DEBUG]    # CT_CONFIG_SHELL_CUSTOM is not set
+[DEBUG]    CT_CONFIG_SHELL="${bash}"
+[DEBUG]    # CT_LOG_ERROR is not set
+[DEBUG]    # CT_LOG_WARN is not set
+[DEBUG]    # CT_LOG_INFO is not set
+[DEBUG]    CT_LOG_EXTRA=y
+[DEBUG]    # CT_LOG_ALL is not set
+[DEBUG]    # CT_LOG_DEBUG is not set
+[DEBUG]    CT_LOG_LEVEL_MAX="EXTRA"
+[DEBUG]    # CT_LOG_SEE_TOOLS_WARN is not set
+[DEBUG]    CT_LOG_PROGRESS_BAR=y
+[DEBUG]    CT_LOG_TO_FILE=y
+[DEBUG]    CT_LOG_FILE_COMPRESS=y
+[DEBUG]    CT_ARCH="arm"
+[DEBUG]    CT_ARCH_SUPPORTS_BOTH_MMU=y
+[DEBUG]    CT_ARCH_SUPPORTS_BOTH_ENDIAN=y
+[DEBUG]    CT_ARCH_SUPPORTS_32=y
+[DEBUG]    CT_ARCH_SUPPORTS_WITH_ARCH=y
+[DEBUG]    CT_ARCH_SUPPORTS_WITH_CPU=y
+[DEBUG]    CT_ARCH_SUPPORTS_WITH_TUNE=y
+[DEBUG]    CT_ARCH_SUPPORTS_WITH_FLOAT=y
+[DEBUG]    CT_ARCH_SUPPORTS_WITH_FPU=y
+[DEBUG]    CT_ARCH_SUPPORTS_SOFTFP=y
+[DEBUG]    CT_ARCH_DEFAULT_HAS_MMU=y
+[DEBUG]    CT_ARCH_DEFAULT_LE=y
+[DEBUG]    CT_ARCH_DEFAULT_32=y
+[DEBUG]    CT_ARCH_ARCH=""
+[DEBUG]    CT_ARCH_CPU=""
+[DEBUG]    CT_ARCH_TUNE=""
+[DEBUG]    CT_ARCH_FPU=""
+[DEBUG]    # CT_ARCH_BE is not set
+[DEBUG]    CT_ARCH_LE=y
+[DEBUG]    CT_ARCH_32=y
+[DEBUG]    CT_ARCH_BITNESS=32
+[DEBUG]    # CT_ARCH_FLOAT_HW is not set
+[DEBUG]    CT_ARCH_FLOAT_SW=y
+[DEBUG]    CT_TARGET_CFLAGS=""
+[DEBUG]    CT_TARGET_LDFLAGS=""
+[DEBUG]    CT_ARCH_arm=y
+[DEBUG]    # CT_ARCH_x86 is not set
+[DEBUG]    # CT_ARCH_sh is not set
+[DEBUG]    # CT_ARCH_avr32 is not set
+[DEBUG]    # CT_ARCH_mips is not set
+[DEBUG]    # CT_ARCH_sparc is not set
+[DEBUG]    # CT_ARCH_powerpc is not set
+[DEBUG]    # CT_ARCH_s390 is not set
+[DEBUG]    # CT_ARCH_m68k is not set
+[DEBUG]    # CT_ARCH_alpha is not set
+[DEBUG]    # CT_ARCH_blackfin is not set
+[DEBUG]    CT_ARCH_arm_AVAILABLE=y
+[DEBUG]    CT_ARCH_x86_AVAILABLE=y
+[DEBUG]    CT_ARCH_sh_AVAILABLE=y
+[DEBUG]    CT_ARCH_avr32_AVAILABLE=y
+[DEBUG]    CT_ARCH_mips_AVAILABLE=y
+[DEBUG]    CT_ARCH_sparc_AVAILABLE=y
+[DEBUG]    CT_ARCH_powerpc_AVAILABLE=y
+[DEBUG]    CT_ARCH_s390_AVAILABLE=y
+[DEBUG]    CT_ARCH_m68k_AVAILABLE=y
+[DEBUG]    CT_ARCH_alpha_AVAILABLE=y
+[DEBUG]    CT_ARCH_microblaze_AVAILABLE=y
+[DEBUG]    CT_ARCH_blackfin_AVAILABLE=y
+[DEBUG]    CT_ARCH_SUFFIX=""
+[DEBUG]    CT_MULTILIB=y
+[DEBUG]    CT_ARCH_USE_MMU=y
+[DEBUG]    CT_ARCH_ENDIAN="little"
+[DEBUG]    # CT_ARCH_FLOAT_SOFTFP is not set
+[DEBUG]    CT_ARCH_FLOAT="soft"
+[DEBUG]    CT_ARCH_ARM_MODE="arm"
+[DEBUG]    CT_ARCH_ARM_MODE_ARM=y
+[DEBUG]    # CT_ARCH_ARM_MODE_THUMB is not set
+[DEBUG]    # CT_ARCH_ARM_INTERWORKING is not set
+[DEBUG]    CT_ARCH_ARM_EABI_FORCE=y
+[DEBUG]    CT_ARCH_ARM_EABI=y
+[DEBUG]    CT_FORCE_SYSROOT=y
+[DEBUG]    CT_USE_SYSROOT=y
+[DEBUG]    CT_SYSROOT_NAME="sysroot"
+[DEBUG]    CT_SYSROOT_DIR_PREFIX=""
+[DEBUG]    # CT_STATIC_TOOLCHAIN is not set
+[DEBUG]    CT_TOOLCHAIN_PKGVERSION=""
+[DEBUG]    CT_TOOLCHAIN_BUGURL=""
+[DEBUG]    CT_TARGET_VENDOR="unknown"
+[DEBUG]    CT_TARGET_ALIAS_SED_EXPR=""
+[DEBUG]    CT_TARGET_ALIAS=""
+[DEBUG]    CT_CROSS=y
+[DEBUG]    # CT_CANADIAN is not set
+[DEBUG]    CT_TOOLCHAIN_TYPE="cross"
+[DEBUG]    CT_BUILD=""
+[DEBUG]    CT_BUILD_PREFIX=""
+[DEBUG]    CT_BUILD_SUFFIX=""
+[DEBUG]    # CT_TOOLCHAIN_ENABLE_NLS is not set
+[DEBUG]    CT_KERNEL_SUPPORTS_SHARED_LIBS=y
+[DEBUG]    CT_KERNEL="linux"
+[DEBUG]    CT_KERNEL_VERSION="3.10.2"
+[DEBUG]    # CT_KERNEL_bare_metal is not set
+[DEBUG]    CT_KERNEL_linux=y
+[DEBUG]    CT_KERNEL_bare_metal_AVAILABLE=y
+[DEBUG]    CT_KERNEL_linux_AVAILABLE=y
+[DEBUG]    CT_KERNEL_V_3_10=y
+[DEBUG]    # CT_KERNEL_V_3_9 is not set
+[DEBUG]    # CT_KERNEL_V_3_8 is not set
+[DEBUG]    # CT_KERNEL_V_3_7 is not set
+[DEBUG]    # CT_KERNEL_V_3_6 is not set
+[DEBUG]    # CT_KERNEL_V_3_5 is not set
+[DEBUG]    # CT_KERNEL_V_3_4 is not set
+[DEBUG]    # CT_KERNEL_V_3_3 is not set
+[DEBUG]    # CT_KERNEL_V_3_2 is not set
+[DEBUG]    # CT_KERNEL_V_3_1 is not set
+[DEBUG]    # CT_KERNEL_V_3_0 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_39 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_38 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_37 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_36 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_33 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_32 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_31 is not set
+[DEBUG]    # CT_KERNEL_V_2_6_27 is not set
+[DEBUG]    # CT_KERNEL_LINUX_CUSTOM is not set
+[DEBUG]    CT_KERNEL_windows_AVAILABLE=y
+[DEBUG]    CT_SHARED_LIBS=y
+[DEBUG]    CT_KERNEL_LINUX_VERBOSITY_0=y
+[DEBUG]    # CT_KERNEL_LINUX_VERBOSITY_1 is not set
+[DEBUG]    # CT_KERNEL_LINUX_VERBOSITY_2 is not set
+[DEBUG]    CT_KERNEL_LINUX_VERBOSE_LEVEL=0
+[DEBUG]    CT_KERNEL_LINUX_INSTALL_CHECK=y
+[DEBUG]    CT_ARCH_BINFMT_ELF=y
+[DEBUG]    CT_BINUTILS="binutils"
+[DEBUG]    CT_BINUTILS_binutils=y
+[DEBUG]    # CT_BINUTILS_V_2_22 is not set
+[DEBUG]    # CT_BINUTILS_V_2_21_53 is not set
+[DEBUG]    # CT_BINUTILS_V_2_21_1a is not set
+[DEBUG]    # CT_BINUTILS_V_2_20_1a is not set
+[DEBUG]    CT_BINUTILS_V_2_19_1a=y
+[DEBUG]    # CT_BINUTILS_V_2_18a is not set
+[DEBUG]    CT_BINUTILS_VERSION="2.19.1a"
+[DEBUG]    CT_BINUTILS_2_19_or_later=y
+[DEBUG]    CT_BINUTILS_2_18_or_later=y
+[DEBUG]    CT_BINUTILS_HAS_HASH_STYLE=y
+[DEBUG]    CT_BINUTILS_GOLD_SUPPORTS_ARCH=y
+[DEBUG]    CT_BINUTILS_HAS_PKGVERSION_BUGURL=y
+[DEBUG]    CT_BINUTILS_FORCE_LD_BFD=y
+[DEBUG]    CT_BINUTILS_LINKER_LD=y
+[DEBUG]    CT_BINUTILS_LINKERS_LIST="ld"
+[DEBUG]    CT_BINUTILS_LINKER_DEFAULT="bfd"
+[DEBUG]    CT_BINUTILS_EXTRA_CONFIG_ARRAY=""
+[DEBUG]    CT_BINUTILS_FOR_TARGET=y
+[DEBUG]    CT_BINUTILS_FOR_TARGET_IBERTY=y
+[DEBUG]    CT_BINUTILS_FOR_TARGET_BFD=y
+[DEBUG]    CT_CC="gcc"
+[DEBUG]    CT_CC_VERSION="4.3.2"
+[DEBUG]    CT_CC_CORE_PASSES_NEEDED=y
+[DEBUG]    CT_CC_gcc=y
+[DEBUG]    # CT_CC_GCC_SHOW_LINARO is not set
+[DEBUG]    # CT_CC_V_4_8_1 is not set
+[DEBUG]    # CT_CC_V_4_8_0 is not set
+[DEBUG]    # CT_CC_V_4_7_3 is not set
+[DEBUG]    # CT_CC_V_4_7_2 is not set
+[DEBUG]    # CT_CC_V_4_7_1 is not set
+[DEBUG]    # CT_CC_V_4_7_0 is not set
+[DEBUG]    # CT_CC_V_4_6_4 is not set
+[DEBUG]    # CT_CC_V_4_6_3 is not set
+[DEBUG]    # CT_CC_V_4_6_2 is not set
+[DEBUG]    # CT_CC_V_4_6_1 is not set
+[DEBUG]    # CT_CC_V_4_6_0 is not set
+[DEBUG]    # CT_CC_V_4_5_3 is not set
+[DEBUG]    # CT_CC_V_4_5_2 is not set
+[DEBUG]    # CT_CC_V_4_5_1 is not set
+[DEBUG]    # CT_CC_V_4_5_0 is not set
+[DEBUG]    # CT_CC_V_4_4_7 is not set
+[DEBUG]    # CT_CC_V_4_4_6 is not set
+[DEBUG]    # CT_CC_V_4_4_5 is not set
+[DEBUG]    # CT_CC_V_4_4_4 is not set
+[DEBUG]    # CT_CC_V_4_4_3 is not set
+[DEBUG]    # CT_CC_V_4_4_2 is not set
+[DEBUG]    # CT_CC_V_4_4_1 is not set
+[DEBUG]    # CT_CC_V_4_4_0 is not set
+[DEBUG]    # CT_CC_V_4_3_6 is not set
+[DEBUG]    # CT_CC_V_4_3_5 is not set
+[DEBUG]    # CT_CC_V_4_3_4 is not set
+[DEBUG]    # CT_CC_V_4_3_3 is not set
+[DEBUG]    CT_CC_V_4_3_2=y
+[DEBUG]    # CT_CC_V_4_3_1 is not set
+[DEBUG]    # CT_CC_V_4_2_4 is not set
+[DEBUG]    # CT_CC_V_4_2_2 is not set
+[DEBUG]    CT_CC_GCC_4_2_or_later=y
+[DEBUG]    CT_CC_GCC_4_3=y
+[DEBUG]    CT_CC_GCC_4_3_or_later=y
+[DEBUG]    # CT_CC_GCC_USE_GRAPHITE is not set
+[DEBUG]    # CT_CC_GCC_USE_LTO is not set
+[DEBUG]    CT_CC_GCC_HAS_PKGVERSION_BUGURL=y
+[DEBUG]    CT_CC_GCC_USE_GMP_MPFR=y
+[DEBUG]    CT_CC_LANG_JAVA_USE_ECJ=y
+[DEBUG]    CT_CC_LANG_FORTRAN=y
+[DEBUG]    CT_CC_SUPPORT_CXX=y
+[DEBUG]    CT_CC_SUPPORT_FORTRAN=y
+[DEBUG]    CT_CC_SUPPORT_JAVA=y
+[DEBUG]    CT_CC_SUPPORT_ADA=y
+[DEBUG]    CT_CC_SUPPORT_OBJC=y
+[DEBUG]    CT_CC_SUPPORT_OBJCXX=y
+[DEBUG]    CT_CC_LANG_CXX=y
+[DEBUG]    CT_CC_LANG_JAVA=y
+[DEBUG]    CT_CC_ENABLE_CXX_FLAGS=""
+[DEBUG]    CT_CC_CORE_EXTRA_CONFIG_ARRAY=""
+[DEBUG]    CT_CC_EXTRA_CONFIG_ARRAY=""
+[DEBUG]    # CT_CC_GCC_SYSTEM_ZLIB is not set
+[DEBUG]    CT_CC_GCC_ENABLE_TARGET_OPTSPACE=y
+[DEBUG]    # CT_CC_GCC_LIBMUDFLAP is not set
+[DEBUG]    # CT_CC_GCC_LIBGOMP is not set
+[DEBUG]    # CT_CC_GCC_LIBSSP is not set
+[DEBUG]    CT_CC_CXA_ATEXIT=y
+[DEBUG]    # CT_CC_GCC_DISABLE_PCH is not set
+[DEBUG]    # CT_CC_GCC_SJLJ_EXCEPTIONS is not set
+[DEBUG]    CT_CC_GCC_LDBL_128=m
+[DEBUG]    CT_LIBC="glibc"
+[DEBUG]    CT_LIBC_VERSION="2.9"
+[DEBUG]    CT_LIBC_glibc=y
+[DEBUG]    # CT_LIBC_uClibc is not set
+[DEBUG]    # CT_LIBC_eglibc is not set
+[DEBUG]    CT_LIBC_mingw_AVAILABLE=y
+[DEBUG]    CT_LIBC_glibc_AVAILABLE=y
+[DEBUG]    # CT_LIBC_GLIBC_V_2_17 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_16_0 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_15 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_14_1 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_14 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_13 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_12_2 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_12_1 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_11_1 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_11 is not set
+[DEBUG]    # CT_LIBC_GLIBC_V_2_10_1 is not set
+[DEBUG]    CT_LIBC_GLIBC_V_2_9=y
+[DEBUG]    # CT_LIBC_GLIBC_V_2_8 is not set
+[DEBUG]    CT_LIBC_newlib_AVAILABLE=y
+[DEBUG]    CT_LIBC_uClibc_AVAILABLE=y
+[DEBUG]    CT_LIBC_none_AVAILABLE=y
+[DEBUG]    CT_LIBC_eglibc_AVAILABLE=y
+[DEBUG]    CT_LIBC_SUPPORT_THREADS_ANY=y
+[DEBUG]    CT_LIBC_SUPPORT_NPTL=y
+[DEBUG]    CT_THREADS="nptl"
+[DEBUG]    CT_THREADS_NPTL=y
+[DEBUG]    CT_LIBC_XLDD=y
+[DEBUG]    CT_LIBC_GLIBC_MAY_FORCE_PORTS=y
+[DEBUG]    CT_LIBC_glibc_familly=y
+[DEBUG]    CT_LIBC_GLIBC_EXTRA_CONFIG_ARRAY=""
+[DEBUG]    CT_LIBC_GLIBC_CONFIGPARMS=""
+[DEBUG]    CT_LIBC_GLIBC_EXTRA_CFLAGS=""
+[DEBUG]    CT_LIBC_EXTRA_CC_ARGS=""
+[DEBUG]    # CT_LIBC_DISABLE_VERSIONING is not set
+[DEBUG]    CT_LIBC_OLDEST_ABI=""
+[DEBUG]    # CT_LIBC_GLIBC_FORCE_UNWIND is not set
+[DEBUG]    CT_LIBC_GLIBC_USE_PORTS=y
+[DEBUG]    CT_LIBC_ADDONS_LIST=""
+[DEBUG]    # CT_LIBC_LOCALES is not set
+[DEBUG]    # CT_LIBC_GLIBC_KERNEL_VERSION_NONE is not set
+[DEBUG]    CT_LIBC_GLIBC_KERNEL_VERSION_AS_HEADERS=y
+[DEBUG]    # CT_LIBC_GLIBC_KERNEL_VERSION_CHOSEN is not set
+[DEBUG]    CT_LIBC_GLIBC_MIN_KERNEL="3.10.2"
+[DEBUG]    # CT_DEBUG_ltrace is not set
+[DEBUG]    # CT_LTRACE_V_0_5_3 is not set
+[DEBUG]    # CT_LTRACE_V_0_5_2 is not set
+[DEBUG]    CT_DEBUG_gdb=y
+[DEBUG]    CT_GDB_CROSS=y
+[DEBUG]    # CT_GDB_CROSS_STATIC is not set
+[DEBUG]    # CT_GDB_CROSS_SIM is not set
+[DEBUG]    CT_GDB_CROSS_PYTHON=y
+[DEBUG]    CT_GDB_CROSS_EXTRA_CONFIG_ARRAY=""
+[DEBUG]    CT_GDB_NATIVE=y
+[DEBUG]    # CT_GDB_NATIVE_STATIC is not set
+[DEBUG]    CT_GDB_GDBSERVER=y
+[DEBUG]    CT_GDB_GDBSERVER_STATIC=y
+[DEBUG]    # CT_DEBUG_GDB_SHOW_LINARO is not set
+[DEBUG]    # CT_GDB_V_7_4_1 is not set
+[DEBUG]    # CT_GDB_V_7_4 is not set
+[DEBUG]    # CT_GDB_V_7_3_1 is not set
+[DEBUG]    # CT_GDB_V_7_3a is not set
+[DEBUG]    # CT_GDB_V_7_2a is not set
+[DEBUG]    # CT_GDB_V_7_1a is not set
+[DEBUG]    # CT_GDB_V_7_0_1a is not set
+[DEBUG]    # CT_GDB_V_7_0a is not set
+[DEBUG]    CT_GDB_V_6_8a=y
+[DEBUG]    CT_GDB_VERSION="6.8a"
+[DEBUG]    # CT_DEBUG_duma is not set
+[DEBUG]    # CT_DUMA_V_2_5_15 is not set
+[DEBUG]    CT_DEBUG_dmalloc=y
+[DEBUG]    CT_DMALLOC_V_5_5_2=y
+[DEBUG]    CT_DMALLOC_VERSION="5.5.2"
+[DEBUG]    CT_DEBUG_strace=y
+[DEBUG]    # CT_STRACE_V_4_6 is not set
+[DEBUG]    # CT_STRACE_V_4_5_20 is not set
+[DEBUG]    CT_STRACE_V_4_5_19=y
+[DEBUG]    # CT_STRACE_V_4_5_18 is not set
+[DEBUG]    CT_STRACE_VERSION="4.5.19"
+[DEBUG]    CT_COMPLIBS_NEEDED=y
+[DEBUG]    CT_GMP_NEEDED=y
+[DEBUG]    CT_MPFR_NEEDED=y
+[DEBUG]    CT_COMPLIBS=y
+[DEBUG]    CT_GMP=y
+[DEBUG]    CT_MPFR=y
+[DEBUG]    # CT_GMP_V_5_1_1 is not set
+[DEBUG]    # CT_GMP_V_5_0_2 is not set
+[DEBUG]    # CT_GMP_V_5_0_1 is not set
+[DEBUG]    CT_GMP_V_4_3_2=y
+[DEBUG]    # CT_GMP_V_4_3_1 is not set
+[DEBUG]    # CT_GMP_V_4_3_0 is not set
+[DEBUG]    CT_GMP_VERSION="4.3.2"
+[DEBUG]    # CT_MPFR_V_3_1_2 is not set
+[DEBUG]    # CT_MPFR_V_3_1_0 is not set
+[DEBUG]    # CT_MPFR_V_3_0_1 is not set
+[DEBUG]    # CT_MPFR_V_3_0_0 is not set
+[DEBUG]    CT_MPFR_V_2_4_2=y
+[DEBUG]    # CT_MPFR_V_2_4_1 is not set
+[DEBUG]    # CT_MPFR_V_2_4_0 is not set
+[DEBUG]    CT_MPFR_VERSION="2.4.2"
+[DEBUG]    # CT_LIBELF_V_0_8_13 is not set
+[DEBUG]    # CT_LIBELF_V_0_8_12 is not set
+[DEBUG]    CT_COMPLIBS_CHECK=y
+[DEBUG]  Dumping user-supplied crosstool-NG configuration: done in 0.09s (at 00:00)
+[DEBUG]  Unsetting and unexporting MAKEFLAGS
+[INFO ]  Building environment variables
+[DEBUG]  Disabling companion tools 'make'
+[DEBUG]  Disabling companion tools 'm4'
+[DEBUG]  Disabling companion tools 'autoconf'
+[DEBUG]  Disabling companion tools 'automake'
+[DEBUG]  Disabling companion tools 'libtool'
+[DEBUG]  Disabling debug 'template'
+[DEBUG]  Enabling debug 'dmalloc'
+[DEBUG]  Disabling debug 'duma'
+[DEBUG]  Enabling debug 'gdb'
+[DEBUG]  Disabling debug 'ltrace'
+[DEBUG]  Enabling debug 'strace'
+[DEBUG]  Disabling test suite 'gcc'
+[DEBUG]  Testing '! ( -z /home/manoj2/x-tools/arm-unknown-linux-gnueabi )'
+[WARN ]  Directory '/home/manoj2/src' does not exist.
+[WARN ]  Will not save downloaded tarballs to local storage.
+[DEBUG]  Testing '! ( ! -w /home/manoj2/x-tools )'
+[EXTRA]  Preparing working directories
+[DEBUG]  ==> Executing: 'chmod' 'u+w' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'chmod' '-R' 'u+w' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/build' 
+[DEBUG]  ==> Executing: 'rm' '-rf' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/build' 
+[DEBUG]  ==> Executing: 'chmod' '775' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'chmod' 'u+w' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'chmod' '-R' 'u+w' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools' 
+[DEBUG]  ==> Executing: 'rm' '-rf' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools' 
+[DEBUG]  ==> Executing: 'chmod' '775' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'chmod' 'u+w' '/home/manoj2/x-tools' 
+[DEBUG]  ==> Executing: 'chmod' '-R' 'u+w' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'rm' '-rf' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'chmod' '775' '/home/manoj2/x-tools' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/tarballs' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/src' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/build' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools/bin' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/build/configs' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools' 
+[DEBUG]  ==> Executing: 'touch' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/foo' 
+[DEBUG]  Testing '! ( -f /home/manoj2/x-tools/arm-unknown-linux-gnueabi/FOO )'
+[DEBUG]  ==> Executing: 'rm' '-f' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/foo' 
+[DEBUG]  ==> Executing: 'chmod' '-R' 'u+w' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi' 
+[DEBUG]  Sanitised 'CT_SYSROOT_REL_DIR': 'sysroot' -> 'sysroot'
+[DEBUG]  Sanitised 'CT_SYSROOT_DIR': '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot' -> '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot'
+[DEBUG]  Sanitised 'CT_DEBUGROOT_DIR': '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi//debug-root' -> '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/debug-root'
+[DEBUG]  Sanitised 'CT_HEADERS_DIR': '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/include' -> '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/include'
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/debug-root' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/lib' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/lib' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/lib' 
+[DEBUG]  ==> Executing: 'mkdir' '-p' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/include' 
+[DEBUG]  Entering '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi'
+[DEBUG]  ==> Executing: 'ln' '-sf' 'sysroot/lib' 'lib' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/lib32' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/lib64' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/lib32' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/lib64' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/lib32' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/sysroot/usr/lib64' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/lib32' 
+[DEBUG]  ==> Executing: 'ln' '-sf' 'lib' '/home/manoj2/x-tools/arm-unknown-linux-gnueabi/arm-unknown-linux-gnueabi/lib64' 
+[DEBUG]  Making build system tools available
+[DEBUG]    'x86_64-build_unknown-linux-gnu-ar' -> '/usr/bin/ar'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools/bin/x86_64-build_unknown-linux-gnu-ar' 
+[DEBUG]    'x86_64-build_unknown-linux-gnu-as' -> '/usr/bin/as'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools/bin/x86_64-build_unknown-linux-gnu-as' 
+[DEBUG]    Missing: 'x86_64-unknown-linux-gnu-dlltool' or 'x86_64-unknown-linux-gnu-dlltool' or 'dlltool' : not required.
+[DEBUG]    'x86_64-build_unknown-linux-gnu-gcc' -> '/usr/bin/gcc'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools/bin/x86_64-build_unknown-linux-gnu-gcc' 
+[DEBUG]    'x86_64-build_unknown-linux-gnu-g++' -> '/usr/bin/g++'
+[DEBUG]  ==> Executing: 'chmod' '700' '/home/manoj2/Desktop/crosstool-ng-1.19.0/.build/arm-unknown-linux-gnueabi/buildtools/bin/x86_64-build_unknown-linux-gnu-g++' 
+[DEBUG]  Testing '! ( y = y )'
+[ERROR]  Missing: 'x86_64-unknown-linux-gnu-gcj' or 'x86_64-unknown-linux-gnu-gcj' or 'gcj' : either needed!
+[ERROR]  
+[ERROR]  >>
+[ERROR]  >>  Build failed in step '(top-level)'
+[ERROR]  >>
+[ERROR]  >>  Error happened in: CT_Abort[scripts/functions@331]
+[ERROR]  >>        called from: CT_TestAndAbort[scripts/functions@351]
+[ERROR]  >>        called from: main[scripts/crosstool-NG.sh@452]
+[ERROR]  >>
+[ERROR]  >>  For more info on this error, look at the file: 'build.log'
+[ERROR]  >>  There is a list of known issues, some with workarounds, in:
+[ERROR]  >>      'docs/B - Known issues.txt'
+[ERROR]  
+[ERROR]  (elapsed: 0:01.12)
