@@ -1,0 +1,755 @@
+HCI sniffer - Bluetooth packet analyzer ver 5.37
+btsnoop version: 1 datalink type: 1002
+< HCI Command: Reset (0x03|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Reset (0x03|0x0003) ncmd 1
+    status 0x00
+< HCI Command: Read Buffer Size (0x04|0x0005) plen 0
+> HCI Event: Command Complete (0x0e) plen 11
+    Read Buffer Size (0x04|0x0005) ncmd 1
+    status 0x00
+    ACL MTU 1024:7 SCO MTU 50:8
+< HCI Command: Host Buffer Size (0x03|0x0033) plen 7
+    ACL MTU 1691:20 SCO MTU 255:10
+> HCI Event: Command Complete (0x0e) plen 4
+    Host Buffer Size (0x03|0x0033) ncmd 1
+    status 0x00
+< HCI Command: Read Local Version Information (0x04|0x0001) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    Read Local Version Information (0x04|0x0001) ncmd 1
+    status 0x00
+    HCI Version: 4.2 (0x8) HCI Revision: 0x0
+    LMP Version: 4.2 (0x8) LMP Subversion: 0x7d3
+    Manufacturer: Qualcomm (29)
+< HCI Command: Read BD ADDR (0x04|0x0009) plen 0
+> HCI Event: Command Complete (0x0e) plen 10
+    Read BD ADDR (0x04|0x0009) ncmd 1
+    status 0x00 bdaddr AC:C1:EE:8D:3A:56
+< HCI Command: Read Local Supported Commands (0x04|0x0002) plen 0
+> HCI Event: Command Complete (0x0e) plen 68
+    Read Local Supported Commands (0x04|0x0002) ncmd 1
+    status 0x00
+    Commands: ffffff03ceffefffffffff7ff20fe8fe3ff783ff1c00000061ffffff7f3e20f3
+              fff807
+< HCI Command: Read Local Extended Features (0x04|0x0004) plen 1
+    page 0
+> HCI Event: Command Complete (0x0e) plen 14
+    Read Local Extended Features (0x04|0x0004) ncmd 1
+    status 0x00 page 0 max 2
+    Features: 0xff 0xfe 0x8f 0xfe 0xd8 0x3f 0x5b 0x87
+< HCI Command: Write Simple Pairing Mode (0x03|0x0056) plen 1
+    mode 0x01
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Simple Pairing Mode (0x03|0x0056) ncmd 1
+    status 0x00
+< HCI Command: Write LE Host Supported (0x03|0x006d) plen 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write LE Host Supported (0x03|0x006d) ncmd 1
+< HCI Command: Read Local Extended Features (0x04|0x0004) plen 1
+    page 1
+> HCI Event: Command Complete (0x0e) plen 14
+    Read Local Extended Features (0x04|0x0004) ncmd 1
+    status 0x00 page 1 max 2
+    Features: 0x07 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+< HCI Command: Read Local Extended Features (0x04|0x0004) plen 1
+    page 2
+> HCI Event: Command Complete (0x0e) plen 14
+    Read Local Extended Features (0x04|0x0004) ncmd 1
+    status 0x00 page 2 max 2
+    Features: 0x00 0x03 0x00 0x00 0x00 0x00 0x00 0x00
+< HCI Command: Vendor (0x3f|0x0153) plen 0
+> HCI Event: Command Complete (0x0e) plen 18
+    Vendor (0x3f|0x0153) ncmd 1
+< HCI Command: Unknown (0x03|0x007a) plen 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Unknown (0x03|0x007a) ncmd 1
+< HCI Command: LE Read White List Size (0x08|0x000f) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    LE Read White List Size (0x08|0x000f) ncmd 1
+< HCI Command: LE Read Buffer Size (0x08|0x0002) plen 0
+> HCI Event: Command Complete (0x0e) plen 7
+    LE Read Buffer Size (0x08|0x0002) ncmd 1
+    status 0x00 pktlen 0x0040 maxpkt 0x10
+< HCI Command: LE Read Supported States (0x08|0x001c) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Read Supported States (0x08|0x001c) ncmd 1
+< HCI Command: LE Read Local Supported Features (0x08|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Read Local Supported Features (0x08|0x0003) ncmd 1
+    status 0x00 features 0xcf00000000000000 (Link Layer supports LE Encryption)
+< HCI Command: Unknown (0x08|0x002a) plen 0
+> HCI Event: Command Complete (0x0e) plen 5
+    Unknown (0x08|0x002a) ncmd 1
+< HCI Command: LE Set Event Mask (0x08|0x0001) plen 8
+    mask 0x7f06000000000000 (Reserved)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Event Mask (0x08|0x0001) ncmd 1
+    status 0x00
+< HCI Command: Set Event Mask (0x03|0x0001) plen 8
+    Mask: 0xffffffffffffbf3d
+> HCI Event: Command Complete (0x0e) plen 4
+    Set Event Mask (0x03|0x0001) ncmd 1
+    status 0x00
+< HCI Command: Unknown (0x04|0x000b) plen 0
+> HCI Event: Command Complete (0x0e) plen 8
+    Unknown (0x04|0x000b) ncmd 1
+< HCI Command: Unknown (0x08|0x0029) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Unknown (0x08|0x0029) ncmd 1
+< HCI Command: Unknown (0x08|0x002e) plen 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Unknown (0x08|0x002e) ncmd 1
+< HCI Command: Write Inquiry Mode (0x03|0x0045) plen 1
+    mode 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Mode (0x03|0x0045) ncmd 1
+    status 0x00
+< HCI Command: Write Page Scan Type (0x03|0x0047) plen 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Page Scan Type (0x03|0x0047) ncmd 1
+< HCI Command: Write Inquiry Scan Type (0x03|0x0043) plen 1
+    type 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Scan Type (0x03|0x0043) ncmd 1
+    status 0x00
+< HCI Command: Write Class of Device (0x03|0x0024) plen 3
+    class 0x5a020c
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Class of Device (0x03|0x0024) ncmd 1
+    status 0x00
+< HCI Command: Write Page Timeout (0x03|0x0018) plen 2
+    timeout 8192
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Page Timeout (0x03|0x0018) ncmd 1
+    status 0x00
+< HCI Command: Write Default Link Policy Settings (0x02|0x000f) plen 2
+    policy 0x07
+    Link policy: RSWITCH HOLD SNIFF 
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Default Link Policy Settings (0x02|0x000f) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0153) plen 0
+> HCI Event: Command Complete (0x0e) plen 18
+    Vendor (0x3f|0x0153) ncmd 1
+< HCI Command: Read Local Name (0x03|0x0014) plen 0
+> HCI Event: Command Complete (0x0e) plen 252
+    Read Local Name (0x03|0x0014) ncmd 1
+    status 0x00 name ''
+< HCI Command: Write Local Name (0x03|0x0013) plen 248
+    name 'Manoj's MI'
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Local Name (0x03|0x0013) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes:
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: LE Rand (0x08|0x0018) plen 0
+> HCI Event: Command Complete (0x0e) plen 12
+    LE Rand (0x08|0x0018) ncmd 1
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: LE Set Random Address (0x08|0x0005) plen 6
+    bdaddr 49:0E:63:D2:78:77
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Random Address (0x08|0x0005) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Vendor (0x3f|0x0154) plen 8
+> HCI Event: Command Complete (0x0e) plen 5
+    Vendor (0x3f|0x0154) ncmd 1
+< HCI Command: Write Voice Setting (0x03|0x0026) plen 2
+    voice setting 0x0060
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Voice Setting (0x03|0x0026) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1112 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1112 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110c 0x1112 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x1112 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Current IAC LAP (0x03|0x003a) plen 4
+    IAC 0x9e8b33 (General Inquiry Access Code)
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Current IAC LAP (0x03|0x003a) ncmd 1
+    status 0x00
+< HCI Command: Write Inquiry Scan Activity (0x03|0x001e) plen 4
+    interval 2048 window 18
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Scan Activity (0x03|0x001e) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 3
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Inquiry Scan Activity (0x03|0x001e) plen 4
+    interval 4096 window 18
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Scan Activity (0x03|0x001e) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1116 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Current IAC LAP (0x03|0x003a) plen 4
+    IAC 0x9e8b33 (General Inquiry Access Code)
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Current IAC LAP (0x03|0x003a) ncmd 1
+    status 0x00
+< HCI Command: Write Inquiry Scan Activity (0x03|0x001e) plen 4
+    interval 2048 window 18
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Inquiry Scan Activity (0x03|0x001e) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 1
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 3
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Local Name (0x03|0x0013) plen 248
+    name 'Manoj's MI'
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Local Name (0x03|0x0013) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x1200
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: LE Set Scan Parameters (0x08|0x000b) plen 7
+    type 0x01 (active)
+    interval 5000.000ms window 5000.000ms
+    own address: 0x01 (Random) policy: All
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Parameters (0x08|0x000b) ncmd 1
+    status 0x00
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x01 (scanning enabled)
+    filter duplicates 0x00 (disabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+< HCI Command: Set Event Filter (0x03|0x0005) plen 2
+    type 1 condition 0
+    Inquiry result for all devices
+> HCI Event: Command Complete (0x0e) plen 4
+    Set Event Filter (0x03|0x0005) ncmd 1
+    status 0x00
+< HCI Command: Inquiry (0x01|0x0001) plen 5
+    lap 0x9e8b33 len 10 num 0
+> HCI Event: Command Status (0x0f) plen 4
+    Inquiry (0x01|0x0001) status 0x00 ncmd 1
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0157) plen 2
+> HCI Event: Command Complete (0x0e) plen 6
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 7
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 11
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 7
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr F8:16:54:12:32:A6 mode 1 clkoffset 0x5ce4 class 0x02010c rssi -88
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr F8:16:54:11:EC:38 mode 1 clkoffset 0x080a class 0x02010c rssi -55
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr F8:2F:A8:C2:99:34 mode 1 clkoffset 0x0cc5 class 0x3e010c rssi -90
+    Complete local name: 'BLR-C58-TEST'
+    TX power level: 0
+    Shortened service classes: 0x110b
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr F8:16:54:12:32:A6 mode 1 clkoffset 0x5ce4 class 0x02010c rssi -67
+    Complete local name: 'A2ML12453'
+    TX power level: 10
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 2
+> HCI Event: Command Complete (0x0e) plen 6
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 13
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 7
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 11
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 7
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 11
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 7
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 18
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr F8:16:54:11:EC:38 mode 1 clkoffset 0x0809 class 0x02010c rssi -57
+    Complete local name: 'A2ML12454'
+    TX power level: 10
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr B8:F6:B1:32:D7:55 mode 1 clkoffset 0x6ecc class 0x380104 rssi -72
+    Complete local name: 'imac-Salila'
+    Complete service classes: 0x1101 0x1200 0x1112 0x111f 0x1117 0x110a 0x110c
+    Unknown type 0xff with 11 bytes data
+> HCI Event: Extended Inquiry Result (0x2f) plen 255
+    bdaddr 10:40:F3:E7:A7:1D mode 1 clkoffset 0x22d4 class 0x3a0104 rssi -76
+    Complete local name: 'Umeshs-iMac'
+    Complete service classes: 0x1112 0x1116 0x110a 0x110c 0x1101 0x1000 0x111f 0x1117
+    Unknown type 0xff with 11 bytes data
+< HCI Command: Inquiry Cancel (0x01|0x0002) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Inquiry Cancel (0x01|0x0002) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2
+    value 0x00 (scanning disabled)
+    filter duplicates 0x01 (enabled)
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Set Scan Enable (0x08|0x000c) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0160) plen 11
+> HCI Event: Command Complete (0x0e) plen 4
+    Vendor (0x3f|0x0160) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Write Local Name (0x03|0x0013) plen 248
+    name 'Manoj's MI'
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Local Name (0x03|0x0013) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Local Name (0x03|0x0013) plen 248
+    name 'Manoj's MI'
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Local Name (0x03|0x0013) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x110a 0x110c 0x110e 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Vendor (0x3f|0x0157) plen 3
+> HCI Event: Command Complete (0x0e) plen 7
+    Vendor (0x3f|0x0157) ncmd 1
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 2
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x110a 0x110c 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x110c 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x1112 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Class of Device (0x03|0x0024) plen 3
+    class 0x52020c
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Class of Device (0x03|0x0024) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x1115 0x1116 0x111f 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x1115 0x1116 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x1115 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Extended Inquiry Response (0x03|0x0052) plen 241
+    fec 0x01
+    Complete local name: 'Manoj's MI'
+    Complete service classes: 0x1105 0x112d 0x112f 0x1200 0x1132
+    Unknown type 0x05 with 0 bytes data
+    Unknown type 0x07 with 0 bytes data
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Extended Inquiry Response (0x03|0x0052) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: Write Scan Enable (0x03|0x001a) plen 1
+    enable 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Write Scan Enable (0x03|0x001a) ncmd 1
+    status 0x00
+< HCI Command: LE Clear White List (0x08|0x0010) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    LE Clear White List (0x08|0x0010) ncmd 1
+    status 0x00
+< HCI Command: Reset (0x03|0x0003) plen 0
+> HCI Event: Command Complete (0x0e) plen 4
+    Reset (0x03|0x0003) ncmd 1
+    status 0x00
