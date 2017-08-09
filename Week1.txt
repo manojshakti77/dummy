@@ -1,0 +1,50 @@
+Basics:
+1.Choose the Training Experience(TRAINING DATA) **
+2.Choose the Target Function(That is to be learned)
+3.How to represent he target function **(Class of FUnctions)
+4.Chooose the learning Algorithm
+
+Types of Learning:
+1.Supervised **(Will have input & corresponding output data)
+2.Unsuperivised (Will have the input the data that will be grouped into some catageories)
+3.Semisupervised (Combination of Supervised & Unsupervised)
+4.Reinforcement
+
+SUPERVISED LEARNING:
+---------------------
+Types:
+1.Classification(Discrete i.e., either true/false or 0...n)
+2.Regression(Continous values say output is real valued number)
+Example data:
+X1 X2 ......Xn | Y(OUTPUT for input instances)
+===================
+a1 a2 ......an | Y1
+b1 b2 ......bn | Y2
+.................           TRAINING  DATA
+.................
+W1 W2 ......wn | Yn
+----------------------
+Z1 Z2 ......Zn | ??         TEST DATA
+
+Classification Learning:
+1.Task T (input & output)
+  Input  : Input instances a1,b1,...w1(Here the set data a1,a2,...an are called features of task/instances)
+  Output : Output instances Y1,Y2...Yn (i.e., 0/1 or true/false or 0...9 etc.,)
+2.Performance Metric P
+  Used to measure the error in predicting the output
+3.Experience E
+Types of Class of functions i.e., the type of algorithm used to learn the data
+1.Decision Tree
+2.Linear Function
+3.Multi variate Linear
+4.Single layer perceptron
+5.Deep Neural Networks
+
+Terminology:
+1.Features : Distinct traits that are used describe each item/instance in training data
+2.Feature Vector : n-dimensional vector used to represent the FEATURES of an object i.e., instance in training data
+3.Instance spaceX: All the training data comprising of feature vector 
+4.Example (x,y) : y =f(X)
+5.Concept C: subset of objects from x
+6.Target Function: Maps instance x to Y 
+7.Training Data 
