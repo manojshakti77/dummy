@@ -1,3 +1,7 @@
+/***************************************************************************************************
+How to use the Facebook developer GraphAPI for retreiving & adding the data to the Facebook Account
+URL: http://facebook-sdk.readthedocs.io/en/latest/api.html
+***************************************************************************************************/
 import facebook as fb
 import numpy as np
 
