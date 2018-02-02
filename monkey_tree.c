@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
   unsigned int t1 = 1;
   unsigned int t2 = 3;
 
-  if((argc - 1) < MAX_NUM_TREES)
+  if((argc - 1) > MAX_NUM_TREES)
   {
 	printf("Num Max Trees exceeded the Limit\n");
 	return -1;
@@ -44,7 +44,6 @@ int main(int argc, char **argv) {
     {
       /*temp = argv[i] + argv[j];*/
 	  temp = (my_atoi(argv[i]) + my_atoi(argv[j]));
-      printf("%d ",temp);
 	  /*If same Height of the TREES*/
       if(temp == val)
       {
@@ -82,6 +81,8 @@ int main(int argc, char **argv) {
 	  }
     }
   }
-  printf("\nval = %d, T1 = %d, T2= %d\n",val,t1,t2);
+  td1 = t2 - t1;
+  td2 = ((t1 - 1) + (argc - t2));
+  printf("%d",(val + (td1 < td2 ? td1 : td2)));
   return 0;
 }
