@@ -45,8 +45,8 @@ int main(int argc, char **argv)
 
 	for (ou_loop_cnt = 1; ou_loop_cnt < argc; ou_loop_cnt++) {
     		for (in_loop_cnt = ou_loop_cnt+1; in_loop_cnt < argc; in_loop_cnt++) {
-	  		temp = (my_atoi(argv[ou_loop_cnt]) + my_atoi(argv[in_loop_cnt])); /* temp = argv[ou_loop_cnt] + argv[in_loop_cnt]; */
-      			if (temp == val) { /* If same Height of the TREES */
+	  		temp = (my_atoi(argv[ou_loop_cnt]) + my_atoi(argv[in_loop_cnt])); 
+      			if (temp == val) { /* If sum of the Heights of the seats in a column are same  */
 				temp_dist1 = seat2 - seat1;
 				temp_dist2 = ((seat1 - 1) + (argc - seat2));
 		
@@ -54,20 +54,20 @@ int main(int argc, char **argv)
 				dist2 = ((ou_loop_cnt - 1) + (argc - in_loop_cnt));
 		
 				if (dist1 < temp_dist1) {
-					if(dist1 < temp_dist2) {
+					if(dist1 < temp_dist2) { /* Veriying the sum of the HEIGHT in Clockwise Direction */
 						val = temp;
 						seat1 = ou_loop_cnt;
 						seat2 = in_loop_cnt;
 					}
 				}
-				if (dist2 < temp_dist1) {
+				if (dist2 < temp_dist1) { /* Verifying the sum of the HEIGHT in Anti CLockwise Direction */
 					if(dist2 < temp_dist2) {
 						val = temp;
 						seat1 = ou_loop_cnt;
 						seat2 = in_loop_cnt;
 					}
 				}
-			} else if (temp > val) { /*If more Height tree is found*/
+			} else if (temp > val) { /* If more Sum of the Heights Seats are found then update the SEAT column values */
 				val = temp;
 				seat1 = ou_loop_cnt;
 				seat2 = in_loop_cnt;

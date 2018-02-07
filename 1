@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc,char **argv) {
+  
+  //int argv[] = {0,4,2,3,4};
+  //int argc = 5;
+  unsigned int i;
+  unsigned int j;
+  unsigned int temp;
+  unsigned int val = 0;
+  unsigned int t1 = 1;
+  unsigned int t2 = 2;
+	
+	for(i=1;i<argc;i++)
+		printf("%d  -- %d\n",i,atoi(argv[i]));
+  
+  for(i = 1;i < argc;i++)
+  {
+    for(int j = i+1;j<argc;j++)
+    {
+      temp = (atoi(argv[i]) + atoi(argv[j]));
+      printf("%d ",temp);
+      if((temp > val) && ((j-i) <= (t2-t1)))
+      {
+        val = temp;
+        t1 = i;
+        t2 = j;
+      }
+    }
+  }
+  if((atoi(argv[1]) +  atoi(argv[argc-1])) == val)
+	  printf("\nval = %d, T1 = 1, T2= %d\n",val,argc-2);
+	else
+	  printf("\nval = %d, T1 = %d, T2= %d\n",val,t1,t2);
+		
+  return 0;
+}
